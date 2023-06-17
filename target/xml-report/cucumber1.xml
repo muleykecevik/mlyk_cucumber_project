@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="20.982" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="1001_Cucumber Amazon Search Test" name="TC02 Amazon JavaTesti" time="20.607">
+<system-out><![CDATA[
+Given Kullanici amazon anasayfaya gider.....................................passed
+When Java icin arama yapar..................................................passed
+Then Arama sonuclarinin Java icerdigini test eder...........................passed
+And Sayfayi kapatir.........................................................passed
+]]></system-out>
+</testcase>
+</testsuite>
