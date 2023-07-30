@@ -154,6 +154,18 @@ public class WonderworldPAge {
     @FindBy (xpath = "//select[@name='DataTables_Table_0_length']")
     public WebElement incomeList100allDropdownmenu;
 
+    //US50
+    /*
+    Kullanıcı, "Attendance" header text i görebilmelidir.
+    Kullanıcı, bir tarih seçebilmeli ve o tarih için Attendance leri listeleyebilmelidir.
+    Kullanıcı, sütun alanlarını görebilmelidir.
+
+     */
+
+    @FindBy ()
+
+
+
 
 
 
