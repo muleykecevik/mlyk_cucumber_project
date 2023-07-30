@@ -118,7 +118,48 @@ public class WonderworldPAge {
     public WebElement firstAssignmentThatAdded;
     @FindBy (xpath = "(//a[@class='btn btn-default btn-xs edit_modal_btn'])[1]")
     public WebElement firstRowEditbutton;
-    @FindBy (xpath = )
+    @FindBy (xpath = "(//i[@class='fa fa-remove'])[1]" )
+    public WebElement firstRawDeleteButton;
+
+
+    //US28 Admin Panel Add Income Section in Income Section
+
+
+    @FindBy (xpath ="//*[text()='Income']" )
+    public WebElement adminPageIncomeSection;
+    @FindBy(xpath = "(//*[text()='Add Income'])[2]")
+    public WebElement incomeAddIncomeSection;
+    @FindBy (xpath = "(//*[text()='Add Income'])[3]")
+    public WebElement addIncomeText;
+    @FindBy (id = "//select[@id='inc_head_id']")
+    public WebElement incomeHeadDropdownMenu;
+    @FindBy(id = "//input[@id='name']")
+    public WebElement addIncomeNamebox;
+    @FindBy (id = "//input[@id='invoice_no']")
+    public WebElement addIncomeInvoiceNumberBox;
+    @FindBy(id = "//input[@id='date']")
+    public WebElement addIncomeDateBox;
+    @FindBy(id = "//input[@id='amount']")
+    public WebElement addIncomeAmountBox;
+    @FindBy (id = "//textarea[@id='description']")
+    public WebElement addIncomeDescriptionBox;
+    @FindBy (id = "//input[@id='documents']")
+    public WebElement addIncomeAtttachDocumentBox;
+    @FindBy (id = "//button[@id='submitbtn']")
+    public WebElement addIncomeSaveButton;
+    @FindBy (xpath = "//thead/tr[1]/th[1]") // th 6 tane var her baslik icin tr[1]/th[2,3,4,5,6] gibi
+    public WebElement incomeListHeaders;
+    @FindBy (xpath = "//input[@type='search']")
+    public WebElement incomeListSearchBox;
+    @FindBy (xpath = "//select[@name='DataTables_Table_0_length']")
+    public WebElement incomeList100allDropdownmenu;
+
+
+
+
+
+
+
 
 
 
