@@ -3,6 +3,7 @@ package pages;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import utilities.ConfigReader;
 import utilities.Driver;
 
 public class WonderworldPAge {
@@ -162,7 +163,57 @@ public class WonderworldPAge {
 
      */
 
-    @FindBy ()
+    public void enterUserName(String email){
+        email= ConfigReader.getProperty("studentEmail");
+        studentEmailBox.sendKeys(email);
+    }
+    public void enterPassword(String password){
+        password=ConfigReader.getProperty("studentPassword");
+        studentPasswordBox.sendKeys(password);
+    }
+    public void clickSignin(){
+        studentLoginPageSinginButton.click();
+    }
+    public void studentPanelisEntered(){
+        studentPageNoImage.isDisplayed();
+    }
+    public void invalidEmailorPasswordTextisDisplayed(){
+        invalidText.isDisplayed();
+    }
+    public void enterWrongPassword(String wrongPassword){
+        wrongPassword=ConfigReader.getProperty("wrongpassword");
+        studentPasswordBox.sendKeys(wrongPassword);
+    }
+    public void enterUnvalidEmail (String unvalidEmail){
+        unvalidEmail=ConfigReader.getProperty("unvalidEmail");
+        studentPasswordBox.sendKeys(unvalidEmail);
+
+    }
+
+
+    //[US43_TC03]
+    @FindBy (xpath = "//a[@class='forgot']")
+    private WebElement studentPageForgotPassword;
+    @FindBy (id = "form-username")
+    private WebElement forgotPasswordEmailBox;
+    @FindBy(xpath = "(//input[@type='radio'])[1]")
+    private WebElement studentRadioButton;
+    @FindBy (xpath = "//button[@type='submit']")
+    private WebElement forgotPasswordSubmitButton;
+
+    public void clickForgotPassword(){
+        studentPageForgotPassword.click();
+    }
+    public void enterForgotPasswordEmailBox(String forgotPasswordEmail){
+        forgotPasswordEmail= ConfigReader.getProperty("forgotPasswordEmail");
+        forgotPasswordEmailBox.sendKeys(forgotPasswordEmail);
+    }
+    public void clickStudentRadioButton(){
+        studentRadioButton.click();
+    }
+    public void clickForgotPasswordSubmitButton(){
+        forgotPasswordSubmitButton.click();
+    }
 
 
 
