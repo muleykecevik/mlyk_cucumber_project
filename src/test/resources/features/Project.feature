@@ -170,7 +170,12 @@ Feature: US43, US44, US45, US46, US47
   Scenario: [TC_003->US_047] The user should be able to send a message from the "Action" section in the "Closed Homework" segment
 
     * User goes to "URL"
+
+    
     * User enters "email" address
+
+
+
     * User enters "password"
     * User clicks the sign in button
     * User clicks Homework section
@@ -200,6 +205,8 @@ Feature: US43, US44, US45, US46, US47
 
     * User goes to "URL"
     * User enters "email" address
+
+
     * User enters "password"
     * User clicks the sign in button
     * User clicks Homework section
