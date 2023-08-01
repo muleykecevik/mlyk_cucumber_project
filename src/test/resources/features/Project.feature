@@ -51,7 +51,7 @@ Feature: US43, US44, US45, US46, US47
     * User verify that she has received a success message stating that her password has been changed successfully.
     * User closes driver
 
-  @query4
+
   Scenario: US44_TC02 The user shouldn't be able to change his password unless he enter correct password combination
 
     * User goes to "URL"
@@ -75,12 +75,13 @@ Feature: US43, US44, US45, US46, US47
     * User clicks the sign in button
     * User clicks Profile Image Icon
     * User clicks Change Password button
-    * User enters Current password
-    * User enters unvalid New password
-    * User enters confirm password
+    * User enters "currentPassword" in current password box
+    * User enters "unvalidNewPassword" in new password boxx
+    * User enters "unvalidNewPassword" confirm password
     * User clicks Save button
     * User verify that password was not changed.
     * User closes driver
+
 
   Scenario:  US_045 TC01 The user should be able to change his username from student page with valid username.
 
@@ -94,9 +95,10 @@ Feature: US43, US44, US45, US46, US47
     * User enters "currentUsername" in current username box.
     * User enters "new username" in new username box.
     * User enters "new username" again in confirm username box.
-    * User clicks save button.
-    * User verifies that username was changed correctly and receive a success message stating that their "username has been changed successfully.
+    * User clicks save buttonn.
+    * User verifies that username was changed correctly and received a success message stating that their username has been changed successfully.
     * User closes driver
+
 
   Scenario: US_045 TC02 The user shouldn't be able to change his username unless he enter valid username.
 
@@ -110,9 +112,10 @@ Feature: US43, US44, US45, US46, US47
     * User enters "currentUsername" in current username box.
     * User enters "new username" in new username box.
     * User enters "wrongNewUsername" again in confirm username box.
-    * User clicks save button.
+    * User clicks save buttonn.
     * User verifies that username was not changed.
     * User closes driver
+
 
   Scenario: US_046 TC01 User should be able to view the Student's name, Admission No, Class, Section, and Gender from student Panel.
 
@@ -123,7 +126,7 @@ Feature: US43, US44, US45, US46, US47
     * User clicks My Profile section.
     * User verifies that she is able to view the Student's name, Admission No, Class, Section, and Gender.
     * User closes driver
-
+  @query4
   Scenario: US_046 TC02 User should be able to view the Profile, Fees, Exam, and Documents segments.
 
     * User goes to "URL"
@@ -170,12 +173,7 @@ Feature: US43, US44, US45, US46, US47
   Scenario: [TC_003->US_047] The user should be able to send a message from the "Action" section in the "Closed Homework" segment
 
     * User goes to "URL"
-
-    
     * User enters "email" address
-
-
-
     * User enters "password"
     * User clicks the sign in button
     * User clicks Homework section
@@ -205,8 +203,6 @@ Feature: US43, US44, US45, US46, US47
 
     * User goes to "URL"
     * User enters "email" address
-
-
     * User enters "password"
     * User clicks the sign in button
     * User clicks Homework section
